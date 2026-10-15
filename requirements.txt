@@ -69,3 +69,5 @@ uvicorn==0.39.0
 xxhash==4.0.1
 yarl==1.22.0
 zipp==3.23.1
+streamlit>=1.40,<2
+requests>=2.31,<3

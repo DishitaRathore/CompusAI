@@ -10,7 +10,6 @@ from fastapi import (
 )
 from sqlalchemy.orm import Session
 
-from fastapi.staticfiles import StaticFiles
 from chatbot import generate_reply
 from database import check_database_connection, get_db
 from schemas import (
@@ -78,11 +77,7 @@ def enforce_rate_limit(request: Request):
         )
 
     timestamps.append(now)
-app.mount(
-    "/ui",
-    StaticFiles(directory="frontend", html=True),
-    name="frontend"
-)
+
 
 @app.get("/")
 def home():
