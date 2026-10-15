@@ -1,0 +1,11 @@
+CampusFlow AI Student Data Protection
+
+Student information should be accessed only for a valid educational purpose.
+
+The system should avoid exposing passwords, payment details, identity documents, or private contact information.
+
+Chatbot responses should display only the minimum information required to answer a student's question.
+
+Student records should not be copied into public datasets or shared without authorization.
+
+Audit logs should record important actions such as ticket creation, security reports, and access to student information.

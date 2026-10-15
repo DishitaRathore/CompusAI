@@ -1,0 +1,175 @@
+text,label
+Write a poem about the ocean.,unknown
+What is the minimum attendance percentage?,policy_question
+Show all my earlier questions.,chat_history
+How can students stay safe online?,security_guidance
+Should I share my OTP?,security_guidance
+Is my attendance above the required percentage?,attendance_query
+What makes a password secure?,security_guidance
+What is the capital of France?,unknown
+Who is the current cricket champion?,unknown
+Should I use the same password everywhere?,security_guidance
+Raise a ticket about my fee record.,create_ticket
+Am I meeting the attendance requirement?,attendance_query
+Show my recent chatbot activity.,chat_history
+Show my previous chatbot conversation.,chat_history
+Report an issue with my attendance.,create_ticket
+Show my chatbot history.,chat_history
+A stranger asked me for my OTP.,security_report
+How does two-factor authentication protect me?,security_guidance
+What is my total fee?,fee_query
+Someone sent me a suspicious link.,security_report
+Tell me the account security policy.,policy_question
+Where can I find the attendance rules?,policy_question
+Tell me my subject-wise attendance.,attendance_query
+Tell me my attendance subject by subject.,attendance_query
+Tell me an interesting science fact.,unknown
+Load my past chats.,chat_history
+Help me plan a vacation.,unknown
+I want to raise a student service request.,create_ticket
+Do I have any unpaid fees?,fee_query
+What will the weather be like?,unknown
+What is my fee status?,fee_query
+What happens if my attendance is too low?,policy_question
+Can you create a service ticket?,create_ticket
+Who won the cricket match?,unknown
+Show attendance for Database Systems.,attendance_query
+How many classes have I missed this semester?,attendance_query
+Explain the fee payment policy.,policy_question
+Show my previous messages.,chat_history
+What should I do if someone asks for my OTP?,security_guidance
+Show my complete fee details.,fee_query
+What are the cybersecurity guidelines?,policy_question
+What are the university data privacy rules?,policy_question
+There is unusual activity on my account.,security_report
+How can I protect my personal information?,security_guidance
+Create a help desk request for me.,create_ticket
+Is my semester fee fully paid?,fee_query
+Create a support ticket.,create_ticket
+Open my previous chat sessions.,chat_history
+Please contact student support for me.,create_ticket
+I received a suspicious message.,security_report
+Am I eligible based on my attendance?,attendance_query
+How can I identify a suspicious email?,security_guidance
+What guidelines apply to student records?,policy_question
+What did I ask earlier?,chat_history
+Can I review my earlier conversation?,chat_history
+How many lectures did I attend this month?,attendance_query
+How can I recognize a fake login page?,security_guidance
+What is the attendance policy?,policy_question
+What is the policy for incorrect attendance?,policy_question
+How can I secure my student account?,security_guidance
+Someone is pretending to be the university.,security_report
+I need assistance from the administration.,create_ticket
+How can I stay safe from phishing?,security_guidance
+Can you check my attendance?,attendance_query
+What is the minimum attendance requirement?,policy_question
+I want to report unauthorized access.,security_report
+I received an email asking for my password.,security_report
+Display my conversation records.,chat_history
+Show attendance for all my subjects.,attendance_query
+I want to report a problem with my student account.,create_ticket
+How many classes do I need to attend?,attendance_query
+I received a phishing email.,security_report
+I want to report a possible data breach.,security_report
+How much was my total tuition fee?,fee_query
+Tell me about the college guidelines.,policy_question
+Where can I read the college policies?,policy_question
+Open a ticket for me.,create_ticket
+Explain the student support policy.,policy_question
+Write a short story about a robot.,unknown
+Tell me a joke.,unknown
+Tell me about famous landmarks.,unknown
+Tell me the official cybersecurity rules.,policy_question
+A message is asking me to verify my account urgently.,security_report
+How often should I change my password?,security_guidance
+How can I avoid cyber attacks?,security_guidance
+List my past conversations.,chat_history
+Please report this issue to the help desk.,create_ticket
+Can I review my previous requests?,chat_history
+Which subjects have attendance below 75 percent?,attendance_query
+What is the weather today?,unknown
+Create a ticket because my data is incorrect.,create_ticket
+How much money do I still owe?,fee_query
+What is the latest movie?,unknown
+Do I have a pending fee payment?,fee_query
+I want to see my old messages.,chat_history
+Tell me if any fees are overdue.,fee_query
+I clicked a malicious link.,security_report
+What amount is left to pay?,fee_query
+What is the policy for reporting incidents?,policy_question
+Show my attendance percentage.,attendance_query
+What are basic cybersecurity practices?,security_guidance
+What are safe email practices?,security_guidance
+What should I do if I receive a phishing email?,security_guidance
+When is my fee payment due?,fee_query
+Explain the education portal policy.,policy_question
+Explain how to grow a plant.,unknown
+How many classes did I miss?,attendance_query
+I want to contact the help desk.,create_ticket
+I entered my password on a suspicious website.,security_report
+I need help from student support.,create_ticket
+What should I do with a suspicious link?,security_guidance
+Submit a support request.,create_ticket
+What rules apply to student data?,policy_question
+Give me a summary of my fees.,fee_query
+Show my pending fees.,fee_query
+What is the capital of Japan?,unknown
+Please open a support request.,create_ticket
+What are the rules for student complaints?,policy_question
+Give me an attendance summary.,attendance_query
+I think my account was hacked.,security_report
+I want to report a cyber incident.,security_report
+I received a suspicious university notification.,security_report
+Tell me my outstanding balance.,fee_query
+Show my fee payment history.,fee_query
+I clicked on a suspicious attachment.,security_report
+What is multi-factor authentication?,security_guidance
+What is the best way to learn guitar?,unknown
+What is my attendance in Machine Learning?,attendance_query
+I need technical help with the ERP.,create_ticket
+Write a poem for me.,unknown
+I think my student credentials were stolen.,security_report
+How much fee have I paid?,fee_query
+Do I have low attendance in any subject?,attendance_query
+Show the amount I have already paid.,fee_query
+I need to submit a complaint.,create_ticket
+Create a complaint about the ERP.,create_ticket
+Open a complaint about my attendance record.,create_ticket
+What have I discussed with the chatbot?,chat_history
+What movies are popular right now?,unknown
+Can you check my unpaid balance?,fee_query
+Take me to my earlier chats.,chat_history
+How should I protect my student account?,security_guidance
+What messages have I sent before?,chat_history
+Have I paid my current semester fees?,fee_query
+Tell me a funny joke.,unknown
+How can I protect my account?,security_guidance
+My fee record is incorrect.,create_ticket
+What percentage of classes did I attend?,attendance_query
+Someone may have accessed my account.,security_report
+Tell me about my education fees.,fee_query
+My account login looks unfamiliar.,security_report
+Suggest a weekend travel plan.,unknown
+I want to review my chat history.,chat_history
+What are the rules for fee refunds?,policy_question
+Give me a healthy breakfast recipe.,unknown
+Load the questions I asked earlier.,chat_history
+How can I keep my account secure?,security_guidance
+How many classes have I attended?,attendance_query
+Can you check my fee balance?,fee_query
+What are the student fee rules?,policy_question
+How do I create a strong password?,security_guidance
+Tell me about cooking recipes.,unknown
+I received a fake fee payment message.,security_report
+What did I ask the assistant yesterday?,chat_history
+How much fee is remaining?,fee_query
+Explain the rules for the education portal.,policy_question
+I downloaded a suspicious attachment.,security_report
+Can I see my conversation history?,chat_history
+I want to raise a complaint.,create_ticket
+How is my attendance percentage calculated?,attendance_query
+Check my attendance record.,attendance_query
+I think this message is a scam.,security_report
+What is my attendance?,attendance_query
+How do I cook pasta?,unknown

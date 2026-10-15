@@ -1,0 +1,11 @@
+CampusFlow AI Cybersecurity Guidelines
+
+Students must never share their passwords, one-time passwords, or personal login details.
+
+Students should not click links from unknown or suspicious emails.
+
+Phishing messages may attempt to steal passwords or financial information.
+
+If a student receives a suspicious link or email, they should avoid opening it and report it to the institution's IT support team.
+
+Security incidents should be recorded with the message description, event type, and severity.

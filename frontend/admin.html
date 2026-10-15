@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusFlow Admin Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef2ff;
+            color: #172033;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: #172554;
+            color: white;
+            padding: 25px;
+            border-radius: 16px 16px 0 0;
+        }
+
+        .header h1 {
+            margin: 0 0 8px;
+        }
+
+        .header p {
+            margin: 0;
+            opacity: 0.8;
+        }
+
+        .panel {
+            background: white;
+            padding: 20px;
+            margin-top: 18px;
+            border-radius: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            margin: 12px 0;
+        }
+
+        button {
+            padding: 11px 16px;
+            margin-right: 8px;
+            border: none;
+            border-radius: 8px;
+            background: #263a91;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d2c70;
+        }
+
+        pre {
+            background: #0f172a;
+            color: #dbeafe;
+            padding: 18px;
+            border-radius: 10px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            line-height: 1.5;
+        }
+
+        .status {
+            color: #475569;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <section class="header">
+            <h1>CampusFlow AI Admin Dashboard</h1>
+            <p>Security events and audit monitoring</p>
+        </section>
+
+        <section class="panel">
+            <label for="adminKey">
+                Administrator API key
+            </label>
+
+            <input
+                id="adminKey"
+                type="password"
+                placeholder="Enter admin API key"
+            >
+
+            <button id="loadEvents">
+                Load Security Events
+            </button>
+
+            <button id="loadLogs">
+                Load Audit Logs
+            </button>
+
+            <p id="status" class="status">
+                Enter the admin API key to continue.
+            </p>
+        </section>
+
+        <section class="panel">
+            <h2>Results</h2>
+            <pre id="output">No data loaded.</pre>
+        </section>
+    </main>
+
+    <script>
+        const adminKeyInput =
+            document.getElementById("adminKey");
+
+        const loadEventsButton =
+            document.getElementById("loadEvents");
+
+        const loadLogsButton =
+            document.getElementById("loadLogs");
+
+        const statusBox =
+            document.getElementById("status");
+
+        const outputBox =
+            document.getElementById("output");
+
+
+        async function loadAdminData(endpoint) {
+            const adminKey =
+                adminKeyInput.value.trim();
+
+            if (!adminKey) {
+                statusBox.textContent =
+                    "Please enter the administrator API key.";
+
+                return;
+            }
+
+            statusBox.textContent =
+                "Loading administrator data...";
+
+            try {
+                const response = await fetch(
+                    endpoint,
+                    {
+                        method: "GET",
+                        headers: {
+                            "X-API-Key": adminKey
+                        }
+                    }
+                );
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(
+                        data.detail || "Request failed"
+                    );
+                }
+
+                outputBox.textContent =
+                    JSON.stringify(data, null, 2);
+
+                statusBox.textContent =
+                    "Data loaded successfully.";
+            } catch (error) {
+                outputBox.textContent =
+                    error.message;
+
+                statusBox.textContent =
+                    "Access or server error.";
+            }
+        }
+
+
+        loadEventsButton.addEventListener(
+            "click",
+            function() {
+                loadAdminData("/security-events");
+            }
+        );
+
+
+        loadLogsButton.addEventListener(
+            "click",
+            function() {
+                loadAdminData("/audit-logs");
+            }
+        );
+    </script>
+</body>
+</html>

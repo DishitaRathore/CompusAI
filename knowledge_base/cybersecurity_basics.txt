@@ -1,0 +1,18 @@
+CampusFlow AI Cybersecurity Basics
+
+Cybersecurity means protecting systems, accounts, networks, and information from unauthorized access or misuse.
+
+Important student security practices include:
+
+1. Use a strong and unique password.
+2. Do not share passwords or one-time passwords.
+3. Enable multi-factor authentication when available.
+4. Avoid clicking unknown links or downloading unexpected attachments.
+5. Verify the sender before responding to an email.
+6. Report suspicious messages to the institution's IT support team.
+7. Keep devices, browsers, and applications updated.
+
+If a student suspects unauthorized access, they should change their password, enable multi-factor authentication, and report the event immediately.
+
+Source basis:
+NIST Cybersecurity Framework 2.0 and CISA cybersecurity guidance.

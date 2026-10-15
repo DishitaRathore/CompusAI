@@ -1,0 +1,22 @@
+[
+  {
+    "source": "attendance_policy.txt",
+    "text": "CampusFlow AI Attendance Policy\n\nStudents should maintain at least 75 percent attendance in each subject.\n\nAttendance below 75 percent may make a student ineligible for certain academic activities or examinations.\n\nIf a student believes their attendance record is incorrect, they should create a support ticket with the subject name and relevant details.\n\nStudents should regularly check their attendance records through the education portal."
+  },
+  {
+    "source": "cybersecurity_basics.txt",
+    "text": "CampusFlow AI Cybersecurity Basics\n\nCybersecurity means protecting systems, accounts, networks, and information from unauthorized access or misuse.\n\nImportant student security practices include:\n\n1. Use a strong and unique password.\n2. Do not share passwords or one-time passwords.\n3. Enable multi-factor authentication when available.\n4. Avoid clicking unknown links or downloading unexpected attachments.\n5. Verify the sender before responding to an email.\n6. Report suspicious messages to the institution's IT support team.\n7. Keep devices, browsers, and applications updated.\n\nIf a student suspects unauthorized access, they should change their password, enable multi-factor authentication, and report the event immediately.\n\nSource basis:\nNIST Cybersecurity Framework 2.0 and CISA cybersecurity guidance."
+  },
+  {
+    "source": "cybersecurity_guidelines.txt",
+    "text": "CampusFlow AI Cybersecurity Guidelines\n\nStudents must never share their passwords, one-time passwords, or personal login details.\n\nStudents should not click links from unknown or suspicious emails.\n\nPhishing messages may attempt to steal passwords or financial information.\n\nIf a student receives a suspicious link or email, they should avoid opening it and report it to the institution's IT support team.\n\nSecurity incidents should be recorded with the message description, event type, and severity."
+  },
+  {
+    "source": "fee_policy.txt",
+    "text": "CampusFlow AI Fee Policy\n\nStudents can check their total fee, paid amount, and remaining balance through the education portal.\n\nIf the fee amount appears incorrect, the student should create a support ticket.\n\nStudents should not share payment passwords, card details, or one-time passwords with anyone."
+  },
+  {
+    "source": "student_data_protection.txt",
+    "text": "CampusFlow AI Student Data Protection\n\nStudent information should be accessed only for a valid educational purpose.\n\nThe system should avoid exposing passwords, payment details, identity documents, or private contact information.\n\nChatbot responses should display only the minimum information required to answer a student's question.\n\nStudent records should not be copied into public datasets or shared without authorization.\n\nAudit logs should record important actions such as ticket creation, security reports, and access to student information."
+  }
+]
