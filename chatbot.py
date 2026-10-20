@@ -1,6 +1,9 @@
+from email.mime import message
+
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
+from text_normalizer import normalize_query
 from intent_classifier import classify_intent
 from llm import generate_answer
 from models import Attendance, ChatMessage, Fee
@@ -11,6 +14,64 @@ from tools import (
     record_security_event
 )
 
+import re
+
+
+def get_small_talk_response(message: str):
+    text = re.sub(
+        r"\s+",
+        " ",
+        message.lower().strip()
+    )
+
+    if re.fullmatch(
+        r"(hi|hello|hey|hii|helo|good morning|good afternoon|good evening)",
+        text
+    ):
+        return "Hello! How can I help you today?"
+
+    if text in {
+        "how are you",
+        "how are you doing",
+        "how is it going"
+    }:
+        return "I'm doing well! I can help with attendance, fees, policies, support tickets, cybersecurity, and chat history."
+
+    if text in {
+        "who are you",
+        "what are you",
+        "what is your name"
+    }:
+        return "I am CampusFlow AI, a student support and cybersecurity assistant."
+
+    if text in {
+        "what can you do",
+        "how can you help",
+        "help"
+    }:
+        return (
+            "I can help you with attendance, fee status, college policies, "
+            "support tickets, cybersecurity guidance, security reports, "
+            "and previous chat messages."
+        )
+
+    if text in {
+        "thanks",
+        "thank you",
+        "thankyou",
+        "thx"
+    }:
+        return "You're welcome! Let me know if you need anything else."
+
+    if text in {
+        "bye",
+        "goodbye",
+        "see you",
+        "see you later"
+    }:
+        return "Goodbye! Have a great day."
+
+    return None
 
 def read_attendance(db: Session, student_id: int) -> str:
     records = db.scalars(
@@ -191,15 +252,36 @@ def answer_from_knowledge_base(
     return f"{answer}\n\n{source}"
 
 def generate_reply(
+    
     message: str,
     student_id: int,
     db: Session
 ) -> dict:
     text = message.lower().strip()
 
+    small_talk_response = get_small_talk_response(message)
+
+    if small_talk_response:
+        record_audit_log(
+            db=db,
+            student_id=student_id,
+            action="small_talk",
+            message="Small-talk response generated"
+        )
+
+        return {
+            "answer": small_talk_response,
+            "mode": "small_talk"
+        }
+
+    routing_message = normalize_query(message)
+
+    # Use the corrected text for keyword fallback conditions
+    text = routing_message.lower().strip()
+
     intent, confidence = classify_intent(
-        message,
-        threshold=0.60    
+        routing_message,
+        threshold=0.60
     )
     classifier_active = confidence >= 0.60
 

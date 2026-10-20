@@ -173,3 +173,10 @@ Check my attendance record.,attendance_query
 I think this message is a scam.,security_report
 What is my attendance?,attendance_query
 How do I cook pasta?,unknown
+"What is my attendence?","attendance_query"
+"Show my atendance","attendance_query"
+"How much feees are remaining?","fee_query"
+"Create a tikcet for my ERP issue","create_ticket"
+"I received a phising email","security_report"
+"What is the attendance polciy?","policy_question"
+"Show my previous histroy","chat_history"

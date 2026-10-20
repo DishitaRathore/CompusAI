@@ -71,3 +71,4 @@ yarl==1.22.0
 zipp==3.23.1
 streamlit>=1.40,<2
 requests>=2.31,<3
+rapidfuzz>=3.0,<4
